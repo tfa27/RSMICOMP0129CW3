@@ -1,0 +1,19 @@
+% \newpage
+\section{Conclusions and Future Work}\label{Sec:conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Section \ref{Sec:experiments} shows that the applied methodology fulfilled the cylinder detection and pick and place requirements. 
+
+In terms of cylinder detection, it successfully used RANSAC to extract the cylinder pose from the RGB-D data, as shown in Table 1. Additionally, the implementation of the point cloud filters successfully decreased the cylinder segmentation time to 21.47 \% of the original time. Furthermore, the bumper sensors successfully kept track of both the cylinder and cuboid objects when they were located in the centre of any table.
+
+In terms of pick and place, the implemented methods were demonstrated to be able to pick and place the cylinder into any of the 3 tables, removing the cuboid object beforehand if it was in the way.
+
+The following future research avenues are proposed:
+
+\begin{itemize}
+    \item Replace all sensing with a wrist mounted RGB-D camera, that allows the robot to map its environment and keep track of the position of all objects without the need for bumper sensors in the tables.
+    
+    \item Use a more sophisticated methodology for grasp detection that allows the robot to grasp irregularly shaped objects.
+    
+    \item Remove the need to pick and place objects only from the centre of tables, thus allowing both the cylindrical and cuboid objects to be placed in the same table hence accelerating workflow.
+    
+\end{itemize}
